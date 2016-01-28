@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="The smash hit game! Control your cell and eat other players to grow larger! Play with millions of players around the world and try to become the biggest cell of all!">
+    <meta name="keywords" content="agario, agar, io, cell, cells, virus, bacteria, blob, game, games, web game, html5, fun, flash">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="minimal-ui, width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta property="fb:app_id" content="677505792353827" />
+    <meta property="og:title" content="IndoBot" />
+    <meta property="og:description" content="The smash hit game! Control your cell and eat other players to grow larger! Play with millions of players around the world and try to become the biggest cell of all!" />
+    <meta property="og:url" content="http://agar.io/" />
+    <meta property="og:image" content="http://agar.io/img/1200x630.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:type" content="website" />
+    <title>INDOBOT</title>
+    <link rel="canonical" href="http://agar.io/" />
+    <link id="favicon" rel="icon" type="image/png" href="favicon-32x32.png" />
+    <script type='text/javascript'>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [], window.googletag = googletag,
+                function() {
+                    var t = document.createElement("script");
+                    t.async = !0, t.type = "text/javascript";
+                    var e = "https:" == document.location.protocol;
+                    t.src = (e ? "https:" : "http:") + "//www.googletagservices.com/tag/js/gpt.js";
+                    var o = document.getElementsByTagName("script")[0];
+                    o.parentNode.insertBefore(t, o)
+                }();
+    </script>
+    <script type="text/javascript">
+        function getUrlVars() {
+            for (var i, o = [], r = window.location.href.slice(window.location.href.indexOf("?") + 1).split("&"), t = 0; t < r.length; t++) i = r[t].split("="), o.push(i[0]), o[i[0]] = i[1];
+            return o
+        }
+        String.prototype.capitalizeFirstLetter = function() {
+            return this.charAt(0).toUpperCase() + this.slice(1)
+        }, window.Vf = !0, window.isChrome = /chrome/.test(navigator.userAgent.toLowerCase()), window.ASSETS_ROOT = "";
+        var queryVars = getUrlVars();
+        null != queryVars.v && (window.location = "/v" + queryVars.v);
+        var rpx_params = {
+                    kw: "",
+                    visitor: {},
+                    inventory: {}
+                }, hasBottomAd = !1,
+                isInFacebook = -1 != window.location.search.indexOf("fb");
+        window.innerHeight > 960 && !isInFacebook && (hasBottomAd = !0), window.___gcfg = {
+            lang: "en-US",
+            parsetags: "explicit"
+        };
+    </script>
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu:700' rel='stylesheet' type='text/css'>
+    <link href="css/master.css" rel="stylesheet" type='text/css'>
+    <link href="./style.css" rel="stylesheet" type='text/css'>
+    <script src="js/master.js"></script>
+    <script src="environment.js?v=30"></script>
+    <script src="./i18n.js?v=30"></script>
+    <script src="./agar.io.js?v=30"></script>
+    <script type="text/javascript" src="mc/lib/soundjs.min.js"></script>
+    <script type="text/javascript" src="mc/agario.js?v=30"></script>
+</head>
+
+<body>
+<main style="display:none">
+    <h1>Agar.io</h1>
+    <p>The smash hit game! Control your cell and eat other players to grow larger! Play with millions of players around the world and try to become the biggest cell of all!</p>
+    <script type="text/javascript">
+        $(function() {
+            window['setGameMode']('');
+        })
+    </script>
+</main>
+<div id="fb-root"></div>
+<script>
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+<div id="openfl-overlay"></div>
+<div id="openfl-content"></div>
+<a id="modal-payment-link" class="xsolla_container" href="/pay/"></a>
+<script src="js/a.js?a&amp;ad_box_"></script>
+<div id="overlays" style="display:none; position: absolute; left: 0; right: 0; top: 0; bottom: 0; z-index: 200;">
+    <div id="controller_alert_connected" class="gamepad_alert" style="display:none">
+        <div class="wrapper"><span class="controller_icon">&nbsp;</span><span class="alert_text">Controller Connected</span>
+        </div>
+    </div>
+    <div id="controller_alert_disconnected" class="gamepad_alert" style="display:none">
+        <div class="wrapper"><span class="controller_icon">&nbsp;</span><span class="alert_text">Controller Disconnected</span>
+        </div>
+    </div>
+    <div id="helloContainer" data-logged-in="0" data-has-account-data="0" data-party-state="0" data-results-state="0" data-gamemode="">
+        <div class="side-container">
+            <div class="agario-panel agario-side-panel agario-profile-panel">
+                <div class="clearfix" style="margin-bottom: 16px;">
+                    <img class="agario-profile-picture" />
+                    <div class="agario-profile-name-container">
+                        <div class="agario-wallet-container"><span class="agario-wallet-label">-</span>
+                            <img src="mc/img/currency_icon.png" class="agario-wallet-currency" />
+                            <div class="agario-wallet-plus"><span>+</span>
+                            </div>
+                        </div>
+                        <div class="agario-profile-name"></div>
+                    </div>
+                </div>
+                <div style="position: relative; margin-bottom: -15px;" class="clearfix">
+                    <div class="agario-exp-bar progress"><span class="progress-bar-text"></span>
+                        <div class="progress-bar progress-bar-striped" style="width: 0%;"></div>
+                    </div>
+                    <div class="progress-bar-border"></div>
+                    <div class="progress-bar-star"></div>
+                </div>
+            </div>
+            <div class="agario-loggedout-panel">
+                <img src="img/login-perks.png">
+            </div>
+            <div class="agario-panel agario-side-panel agario-shop-panel">
+                <div class="form-group" id="agario-second-buttons">
+                    <button id="openShopBtn" onclick="MC.openShop(); return false;" class="btn btn-primary btn-shop" style="line-height: 24px;" data-itr="Shop"></button>
+                    <br clear="both" />
+                </div>
+                <div class="shop-left-container">
+                    <div id="skinButton" style="cursor:pointer">
+                        <div class="circle big green" style="top:75px;"><span class="outlined-text plus-text" style="cursor:pointer;line-height: 26px;">+</span>
+                        </div>
+                        <img class="circle bordered" /><span id="skinLabel" class="outlined-text"></span>
+                    </div>
+                </div>
+                <div class="vertical-line" style="min-height:115px;"></div>
+                <div class="shop-right-container">
+                    <div style="position:relative">
+                        <div id="boostButton" class="shop-power">
+                            <div class="circle small green"><span class="outlined-text" style="cursor:pointer">+</span>
+                            </div>
+                            <img src="mc/img/xpboost_3x_shop.png" style="vertical-align:top; width:60px; display:block;margin:auto;" /><span class="timer"></span>
+                        </div>
+                        <div id="massButton" class="shop-power">
+                            <div class="circle small green"><span class="outlined-text" style="cursor:pointer">+</span>
+                            </div>
+                            <img src="mc/img/massboost_3x_shop.png" style="vertical-align:top; width:60px; display:block;margin:auto;" /><span class="timer"></span>
+                        </div>
+                    </div>
+                </div><span class="text-muted"></span>
+                <button id="retryBtn" onclick="MC.retryConnection(); return false;" class="btn btn-primary btn-retry" style="display:none;margin-top:10px;" data-itr="Retry"></button>
+            </div>
+        </div>
+        <div id="mainPanel" class="agario-panel">
+            <div role="form" novalidate>
+                <div class="form-group clearfix">
+                    <div style="float: left; margin-left: 20px;">
+                        <h3><p style="background-color:black"><marquee><b><font color=red>www.indo</color><font color=white>bot.ga</color></b></marquee></p></h3> 
+<script>
+<!--
+document.write(unescape("%3Cform%20action%3D%22https%3A//www.paypal.com/cgi-bin/webscr%22%20method%3D%22post%22%20target%3D%22_top%22%3E%0A%3Cinput%20type%3D%22hidden%22%20name%3D%22cmd%22%20value%3D%22_s-xclick%22%3E%0A%3Cinput%20type%3D%22hidden%22%20name%3D%22hosted_button_id%22%20value%3D%22Z3A3LLP9CNM62%22%3E%0A%3Cinput%20type%3D%22image%22%20src%3D%22https%3A//www.paypalobjects.com/id_ID/i/btn/btn_donateCC_LG.gif%22%20border%3D%220%22%20name%3D%22submit%22%20alt%3D%22PayPal%20-%20The%20safer%2C%20easier%20way%20to%20pay%20online%21%22%3E%0A%3Cimg%20alt%3D%22%22%20border%3D%220%22%20src%3D%22https%3A//www.paypalobjects.com/id_ID/i/scr/pixel.gif%22%20width%3D%221%22%20height%3D%221%22%3E%0A%3C/form%3E"));
+//-->
+</script>
+
+                    </div>
+                    <div style="float: right; margin-top: 10px; height: 40px;">
+                        <div id="agarYoutube">
+                            <div class="g-ytsubscribe pull-right" data-channelid="UCwrs-yMS8-QQVDfWgPwrQjA" data-layout="default" data-count="default"></div>
+							<input type="button" value="Check For Updates" onClick=" window.location.href='http://www.indobot.ga' ">
+                        </div>
+
+
+
+         <script>
+<!--
+document.write(unescape("%20%3C%21--%20%20%20%20FB%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22clearfix%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22fb-like%20pull-right%22%20data-href%3D%22https%3A//www.facebook.com/playagar.io%22%20data-layout%3D%22button%22%20data-action%3D%22like%22%20data-show-faces%3D%22true%22%20data-share%3D%22true%22%3E%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%20--%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22form-group%20clearfix%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cinput%20id%3D%22nick%22%20class%3D%22form-control%22%20placeholder%3D%22Nick%22%20value%3D%22www.indobot.ga%22%20maxlength%3D%2215%22%20autofocus%20/%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cselect%20id%3D%22gamemode%22%20class%3D%22form-control%22%20onchange%3D%22setGameMode%28%24%28this%29.val%28%29%29%3B%22%20required%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Coption%20value%3D%22%22%20data-itr%3D%22gamemode_ffa%22%3E%3C/option%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Coption%20value%3D%22%3Ateams%22%20data-itr%3D%22gamemode_teams%22%3E%3C/option%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Coption%20value%3D%22%3Aexperimental%22%20data-itr%3D%22gamemode_experimental%22%3E%3C/option%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Coption%20value%3D%22%3Aparty%22%20data-itr%3D%22party%22%3E%3C/option%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/select%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22form-group%20clearfix%22%20style%3D%22margin-bottom%3A%2010px%3B%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cselect%20style%3D%22width%3A%2080%25%3B%20float%3A%20left%3B%22%20id%3D%22skin%22%20class%3D%22form-control%22%20onchange%3D%22setSkin%28this.value%29%22%20required%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Coption%20selected%20data-itr%3D%22custom_skin%22%20value%3D%22%22%3E%3C/option%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/select%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20id%3D%22imageSkin%22%20style%3D%22width%3A%2050px%3B%20height%3A%2050px%3B%20border-radius%3A%2050px%3B%20border%3A%2010px%20solid%20%23FF0000%3B%20display%3A%20inline-block%3B%20background-img%3A%20%23ffffff%3B%20float%3A%20right%3B%20background-repeat%3A%20no-repeat%3B%20background-size%3A%2048px%3B%22%3E%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cscript%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20function%20setSkin%28a%29%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20skinsPremium.indexOf%28a%29%20%3E%20-1%20%3F%20isSkinPremium%20%3D%20%210%20%3A%20isSkinPremium%20%3D%20%211%2C%20skins.indexOf%28a%29%20%3E%20-1%20%7C%7C%20isSkinPremium%20%3F%20%28%24%28%22%23skin%22%29.val%28a%29%2C%20%24%28%22%23nick%22%29.val%28a%29%2C%20%24%28%22%23imageSkin%22%29.css%28%22background-image%22%2C%20%22url%28%27http%3A//agar.io/skins/%22%20+%20%28isSkinPremium%20%26%26%20%22premium/%22%20%7C%7C%20%22%22%29%20+%20a.capitalizeFirstLetter%28%29%20+%20%22.png%27%29%22%29%29%20%3A%20%28%24%28%22%23skin%22%29.val%28%22%22%29%2C%20%22%22%20%21%3D%20a%20%7C%7C%20%24%28%22%23nick%22%29.val%28%22%22%29%2C%20%24%28%22%23imageSkin%22%29.css%28%22background-image%22%2C%20%22%22%29%29%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20skinsPremium%20%3D%20%22Venus%2CMercury%2CBanana%2CBirdie%2CApple%2CTiger%2CCookie%2CJupiter%2CHalo%2CNeptune%2CBlack%20Hole%2CUranus%2CStar%20Ball%2CTarget%2CGalaxy%2CBreakfast%2CSaturn%2CPluto%2CHot%20Dog%2C%20Heart%2C%20Mouse%2CWolf%2CGoldfish%2CPiggie%2CBlueberry%2CBomb%2CBowling%2CCandy%2CFrog%2CHamburger%2CNose%2CSeal%2CPanda%2CPizza%2CSnowman%2CSun%2CBaseball%2CBasketball%2CBug%2CCloud%2CMoo%2CTomato%2CMushroom%2CDonuts%2CTerrible%2CGhost%2CApple%20Face%2CTurtle%2CBroFist%2CPuppy%2CFootprint%2CPineapple%2CZebra%2CToon%2COctopus%2CRadar%2CEye%2COwl%2CVirus%2CSmile%2CArmy%2CCat%2CNuclear%2CToxic%2CDog%2CSad%2CFacepalm%2CLuchador%2CZombie%2CBite%2CCrazy%2CHockey%2CBrain%2CEvil%2CPirate%2CEvil%20Eye%2CHalloween%2CMonster%2CScarecrow%2CSpy%22.split%28%22%2C%22%29%2C%20skins%20%3D%20%222ch.hk%3B4chan%3B8%3B8ch%3B9gag%3Bargentina%3Baustralia%3Baustria%3Bayy%20lmao%3Bbait%3Bbangladesh%3Bbelarus%3Bbelgium%3Bberlusconi%3Bblatter%3Bboris%3Bbosnia%3Bbotswana%3Bbrazil%3Bbulgaria%3Bbush%3Bbyzantium%3Bcambodia%3Bcameron%3Bcanada%3Bchaplin%3Bchavez%3Bchile%3Bchina%3Bcia%3Bclinton%3Bconfederate%3Bcroatia%3Bcuba%3Bdenmark%3Bdilma%3Bdoge%3Bea%3Bearth%3Bestonia%3Beuropean%20union%3Bfacebook%3Bfacepunch%3Bfeminism%3Bfidel%3Bfinland%3Bfrance%3Bfrench%20kingdom%3Bgerman%20empire%3Bgermany%3Bgreece%3Bhillary%3Bhollande%3Bhong%20kong%3Bhungary%3Bimperial%20japan%3Bindia%3Bindiana%3Bindonesia%3Biran%3Biraq%3Bireland%3Birs%3Bitaly%3Bjamaica%3Bjapan%3Bkc%3Bkim%20jong-un%3Blatvia%3Blithuania%3Bluxembourg%3Bmaldivas%3Bmars%3Bmatriarchy%3Bmerkel%3Bmexico%3Bmoon%3Bnasa%3Bnetherlands%3Bnigeria%3Bnorth%20korea%3Bnorway%3Bobama%3Borigin%3Bpakistan%3Bpalin%3Bpatriarchy%3Bperu%3Bpiccolo%3Bpokerface%3Bpoland%3Bportugal%3Bprodota%3Bprussia%3Bputin%3Bqing%20dynasty%3Bquebec%3Bqueen%3Breceita%20federal%3Breddit%3Bromania%3Brussia%3Bsanik%3Bsatanist%3Bscotland%3Bsealand%3Bsir%3Bsomalia%3Bsouth%20korea%3Bspain%3Bstalin%3Bsteam%3Bstussy%3Bsweden%3Bswitzerland%3Btaiwan%3Btexas%3Bthailand%3Btrump%3Btsarist%20russia%3Btsipras%3Btumblr%3Bturkey%3Bukraine%3Bunited%20kingdom%3Busa%3Bvenezuela%3Bvinesauce%3Bwojak%3Byaranaika%22.split%28%22%3B%22%29%2C%20%24%28skins%29.each%28function%28a%2C%20i%29%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%24%28%22%23skin%22%29.append%28%22%3Coption%20value%3D%27%22%20+%20i%20+%20%22%27%3E%22%20+%20i%20+%20%22%3C/option%3E%22%29%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%29%2C%20%24%28%22%23skin%22%29.append%28%22%3Coptgroup%20value%3D%27premium%27%20label%3D%27Premium%20skins%27%3E%3C/optgroup%3E%22%29%2C%20%24%28skinsPremium%29.each%28function%28a%2C%20i%29%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%24%28%22%23skin%20optgroup%5Blabel%3D%27Premium%20skins%27%5D%22%29.append%28%22%3Coption%20value%3D%27%22%20+%20i.toLowerCase%28%29%20+%20%22%27%3E%22%20+%20i%20+%20%22%3C/option%3E%22%29%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/script%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22form-group%20clearfix%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cinput%20style%3D%22float%3Aleft%3B%20width%3A%2070%25%3B%22%20id%3D%22serverIP%22%20class%3D%22form-control%22%20placeholder%3D%22Server%20IP%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cbutton%20style%3D%22float%3Aright%3B%22%20onclick%3D%22connect%28%24%28%27%23serverIP%27%29.val%28%29%2C%20%24%28%27%23token%27%29.val%28%29%29%3B%20return%20false%3B%22%20type%3D%22button%22%20class%3D%22btn%20btn-success%22%3EConnect%3C/button%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22form-group%20clearfix%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cinput%20style%3D%22width%3A100%25%3B%22%20id%3D%22token%22%20class%3D%22form-control%22%20placeholder%3D%22Token%20%28optional%29%22%20/%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20id%3D%22locationUnknown%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cselect%20id%3D%22region%22%20class%3D%22form-control%22%20onchange%3D%22setRegion%28%24%28%27%23region%27%29.val%28%29%29%3B%22%20required%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Coption%20selected%20disabled%20value%3D%22%22%20data-itr%3D%22region_select%22%3E%3C/option%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Coption%20value%3D%22US-Atlanta%22%20data-itr%3D%22region_north_america%22%3E%3C/option%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Coption%20value%3D%22BR-Brazil%22%20data-itr%3D%22region_south_america%22%3E%3C/option%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Coption%20value%3D%22EU-London%22%20data-itr%3D%22region_europe%22%3E%3C/option%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Coption%20value%3D%22RU-Russia%22%20data-itr%3D%22region_russia%22%3E%3C/option%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Coption%20value%3D%22TK-Turkey%22%20data-itr%3D%22region_turkey%22%3E%3C/option%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Coption%20value%3D%22JP-Tokyo%22%20data-itr%3D%22region_east_asia%22%3E%3C/option%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Coption%20value%3D%22CN-China%22%20data-itr%3D%22region_china%22%3E%3C/option%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Coption%20value%3D%22SG-Singapore%22%20data-itr%3D%22region_oceania%22%3E%3C/option%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/select%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22form-group%22%20id%3D%22agario-main-buttons%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22row%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cbutton%20type%3D%22button%22%20onclick%3D%22toggleSettings%28%29%3B%20return%20false%3B%22%20class%3D%22btn%20btn-info%20btn-settings%22%3E%3Ci%20class%3D%22glyphicon%20glyphicon-cog%22%3E%3C/i%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/button%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cbutton%20disabled%20type%3D%22submit%22%20onclick%3D%22setNick%28document.getElementById%28%27nick%27%29.value%29%3B%20return%20false%3B%22%20class%3D%22btn%20btn-play%20btn-primary%20btn-needs-server%22%20data-itr%3D%22play%22%3E%3C/button%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cbutton%20disabled%20type%3D%22submit%22%20onclick%3D%22setNick%28document.getElementById%28%27nick%27%29.value%29%3B%20return%20false%3B%22%20class%3D%22btn%20btn-play-guest%20btn-success%20btn-needs-server%22%20data-itr%3D%22play_as_guest%22%3E%3C/button%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cbutton%20disabled%20type%3D%22submit%22%20onclick%3D%22toggleSocialLogin%28%29%3B%20return%20false%22%20class%3D%22btn%20btn-warning%20btn-login-play%20btn-needs-server%22%20data-itr%3D%22login_and_play%22%3E%3C/button%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20id%3D%22socialLoginContainer%22%20style%3D%22display%3Anone%3B%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22row%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cbutton%20onclick%3D%22facebookLogin%28%29%3B%20return%20false%3B%22%20class%3D%22col-lg-12%20col-md-12%20btn%20btn-primary%20btn-login%20btn-fb%22%20style%3D%22%22%3E%3Cspan%20class%3D%22social%20social-facebook%20fb-icon%22%3E%3C/span%3E%3Cspan%20class%3D%22btn-text%22%20data-itr%3D%22menu_login_facebook%22%3E%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/button%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22row%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cbutton%20id%3D%22gplusLogin%22%20class%3D%22col-lg-12%20col-md-12%20btn%20btn-primary%20btn-gplus%20btn-login%22%3E%3Cspan%20class%3D%22gplus-icon%22%3E%3C/span%3E%3Cspan%20class%3D%22btn-text%22%20data-itr%3D%22menu_login_google%22%3E%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/button%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20id%3D%22settings%22%20class%3D%22checkbox%22%20style%3D%22display%3Anone%3B%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22clearfix%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20id%3D%22locationKnown%22%3E%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20style%3D%22width%3A%20100%25%3B%20margin-top%3A%206px%3B%22%20class%3D%22clearfix%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22form-group%20btn-group%20pull-left%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cbutton%20onclick%3D%22spectate%28%29%3B%20return%20false%3B%22%20disabled%20class%3D%22btn%20btn-warning%20btn-spectate%20btn-needs-server%22%20data-itr%3D%22spectate%22%3E%3C/button%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cbutton%20onclick%3D%22setCellForSpectating%28%29%3B%20return%20false%3B%22%20class%3D%22btn%20btn-success%20btn-search%20btn-needs-server%22%3E%3Cspan%20class%3D%22glyphicon%20glyphicon-search%22%3E%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/button%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cbutton%20onclick%3D%22logout%28%29%3B%20return%20false%3B%22%20class%3D%22btn%20btn-danger%20btn-logout%20pull-right%22%20data-itr%3D%22logout%22%3E%3C/button%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20id%3D%22options%22%20style%3D%22margin%3A%206px%3B%20font-size%3A%2012px%3B%22%20class%3D%22clearfix%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Clabel%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cinput%20type%3D%22checkbox%22%20onchange%3D%22setSkins%28%21%24%28this%29.is%28%27%3Achecked%27%29%29%3B%22%3E%3Cspan%20data-itr%3D%22option_no_skins%22%3E%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/label%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Clabel%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cinput%20type%3D%22checkbox%22%20onchange%3D%22setNames%28%21%24%28this%29.is%28%27%3Achecked%27%29%29%3B%22%3E%3Cspan%20data-itr%3D%22option_no_names%22%3E%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/label%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Clabel%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cinput%20type%3D%22checkbox%22%20onchange%3D%22setColors%28%24%28this%29.is%28%27%3Achecked%27%29%29%3B%22%3E%3Cspan%20data-itr%3D%22option_no_colors%22%3E%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/label%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Clabel%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cinput%20type%3D%22checkbox%22%20onchange%3D%22setShowMass%28%24%28this%29.is%28%27%3Achecked%27%29%29%3B%22%3E%3Cspan%20data-itr%3D%22option_show_mass%22%3E%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/label%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Clabel%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cinput%20type%3D%22checkbox%22%20onchange%3D%22setDarkTheme%28%24%28this%29.is%28%27%3Achecked%27%29%29%3B%22%3E%3Cspan%20data-itr%3D%22option_dark_theme%22%3E%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/label%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Clabel%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cinput%20type%3D%22checkbox%22%20onchange%3D%22setSkipStats%28%24%28this%29.is%28%27%3Achecked%27%29%29%3B%22%3E%3Cspan%20data-itr%3D%22option_skip_stats%22%3E%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/label%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Clabel%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cinput%20type%3D%22checkbox%22%20onchange%3D%22setShowBorders%28%24%28this%29.is%28%27%3Achecked%27%29%29%3B%22%3E%3Cspan%20data-itr%3D%22option_show_borders%22%3E%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/label%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Clabel%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cinput%20type%3D%22checkbox%22%20onchange%3D%22setExtraZoom%28%24%28this%29.is%28%27%3Achecked%27%29%29%3B%22%3E%3Cspan%20data-itr%3D%22option_extra_zoom%22%3E%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/label%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Clabel%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cinput%20type%3D%22checkbox%22%20onchange%3D%22setShowOthersMass%28%24%28this%29.is%28%27%3Achecked%27%29%29%3B%22%3E%3Cspan%20data-itr%3D%22option_show_others_mass%22%3E%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/label%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Clabel%20id%3D%22extendedColorsTooltip%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cinput%20type%3D%22checkbox%22%20onchange%3D%22setExtendedColors%28%24%28this%29.is%28%27%3Achecked%27%29%29%3B%22%3E%3Cspan%20data-itr%3D%22option_extended_colors%22%3E%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/label%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Clabel%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cinput%20type%3D%22checkbox%22%20onchange%3D%22setVirusTransparency%28%24%28this%29.is%28%27%3Achecked%27%29%29%3B%22%3E%3Cspan%20data-itr%3D%22option_virus_transparency%22%3E%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/label%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Clabel%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cinput%20type%3D%22checkbox%22%20onchange%3D%22setLargeNames%28%24%28this%29.is%28%27%3Achecked%27%29%29%3B%22%3E%3Cspan%20data-itr%3D%22option_large_names%22%3E%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/label%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Clabel%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cinput%20type%3D%22checkbox%22%20onchange%3D%22setNoGrid%28%24%28this%29.is%28%27%3Achecked%27%29%29%3B%22%3E%3Cspan%20data-itr%3D%22option_no_grid%22%3E%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/label%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Clabel%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cinput%20type%3D%22checkbox%22%20onchange%3D%22setShowMyRange%28%24%28this%29.is%28%27%3Achecked%27%29%29%3B%22%3E%3Cspan%20data-itr%3D%22option_show_my_range%22%3E%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/label%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Clabel%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cinput%20type%3D%22checkbox%22%20onchange%3D%22setShowVirusRange%28%24%28this%29.is%28%27%3Achecked%27%29%29%3B%22%3E%3Cspan%20data-itr%3D%22option_show_virus_range%22%3E%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/label%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Clabel%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cinput%20type%3D%22checkbox%22%20onchange%3D%22setMergeTime%28%24%28this%29.is%28%27%3Achecked%27%29%29%3B%22%3E%3Cspan%20data-itr%3D%22option_merge_time%22%3E%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/label%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Clabel%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cinput%20type%3D%22checkbox%22%20onchange%3D%22setLastDied%28%24%28this%29.is%28%27%3Achecked%27%29%29%3B%22%3E%3Cspan%20data-itr%3D%22option_last_died%22%3E%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/label%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Clabel%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cinput%20type%3D%22checkbox%22%20onchange%3D%22setMinimap%28%24%28this%29.is%28%27%3Achecked%27%29%29%3B%22%3E%3Cspan%20data-itr%3D%22option_minimap%22%3E%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/label%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A"));
+//-->
+</script>
+                   <script>
+<!--
+document.write(unescape("%20%3Cdiv%20class%3D%22form-group%22%20style%3D%22width%3A%20100%25%3B%22%20id%3D%22botsSettings%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cinput%20id%3D%22botsNick%22%20class%3D%22form-control%22%20placeholder%3D%22Bot%27s%20nick%22%20readonly%3D%22readonly%22%20value%3D%22www.indobot.ga%22%20maxlength%3D%2218%22%20/%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cinput%20id%3D%22botsAmount%22%20class%3D%22form-control%22%20placeholder%3D%22Amount%20of%20bots%22%20readonly%3D%22readonly%22%20value%3D%2250%22%20/%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3EMaxium%20Bots%3A%2050%20%3Cb%3E%28Free%29%3C/b%3E%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cbutton%20onclick%3D%22runBots%28jQuery%28%27%23serverIP%27%29.val%28%29%2C%20jQuery%28%27%23token%27%29.val%28%29%29%3B%20return%20false%3B%22%20class%3D%22btn%20btn-default%20btn-runBots%22%20data-itr%3D%22run_bots%22%3E%3C/button%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A"));
+//-->
+</script>
+                    <div id="botsOptions">
+                        <label>
+                            <input type="radio" name="botsFollow" value="cell" style="margin-left: -20px;"> <span data-itr="option_follow_my_cell"></span>
+                        </label>
+                        <label class="pull-right">
+                            <input type="radio" name="botsFollow" value="mouse" style="margin-left: -20px;" checked> <span data-itr="option_follow_my_mouse"></span>
+                        </label>
+                    </div>
+                    <br clear="both" />
+                    <div id="tags-container"><span id="user-id-tag"></span><span id="version-tag"></span>
+                    </div>
+                </div>
+            </div>
+            <div id="instructions">
+                <hr/>
+                <center><span class="text-muted"><span data-itr="instructions_mouse"></span>
+                        <br/><span data-itr="instructions_space"></span>
+                        <br/><span data-itr="instructions_w"></span>
+                        <br/>
+                        </span>
+                </center>
+            </div>
+            <hr/>
+            <center><small class="text-muted" style="display: block; margin-bottom: 16px;" data-itr="advertisement"></small>
+                <div id="adbg" style="margin-bottom: 10px; width: 300px; height: 250px;">
+                    <div id="g300x250" style="display:block;"></div>
+                    <div id="a300x250" style="display:none;"></div>
+                </div>
+            </center>
+        </div>
+        <div id="stats" style="display: none;" class="agario-panel">
+            <h2><center>Match Results</center></h2>
+
+            <canvas id="statsGraph" width="350" height="230"></canvas>
+            <div id="statsPelletsContainer"> <span id="statsText" class="stats-food-eaten"></span><span id="statsSubtext" data-itr="stats_food_eaten"></span>
+            </div>
+            <div id="statsHighestMassContainer"> <span id="statsText" class="stats-highest-mass"></span><span id="statsSubtext" data-itr="stats_highest_mass"></span>
+            </div>
+            <div id="statsTimeAliveContainer"> <span id="statsText" class="stats-time-alive"></span><span id="statsSubtext" data-itr="stats_time_alive"></span>
+            </div>
+            <div id="statsTimeLeaderboardContainer"> <span id="statsText" class="stats-leaderboard-time"></span><span id="statsSubtext" data-itr="stats_leaderboard_time"></span>
+            </div>
+            <div id="statsPlayerCellsEatenContainer"> <span id="statsText" class="stats-cells-eaten"></span><span id="statsSubtext" data-itr="stats_cells_eaten"></span>
+            </div>
+            <div id="statsTopPositionContainer"> <span id="statsText" class="stats-top-position">?</span><span id="statsSubtext" data-itr="stats_top_position"></span>
+            </div>
+
+            <hr style="position:absolute;bottom:370px;width:100%;margin:0px;" />
+            <div id="socialStats" style="position: absolute;bottom: 325px;left: 25px;right:25px;">
+                <button id="gPlusShare" style="width:49%;float:left;display:none" class="g-interactivepost btn btn-primary btn-gplus" data-contenturl="http://agar.io" data-clientid='' data-cookiepolicy="http://agar.io" data-prefilltext="" data-calltoactionlabel="BEAT"
+                        data-calltoactionurl="http://agar.io"><span class="gplus-icon"></span><span class="btn-text" data-itr="share"></span>
+                </button>
+                <button id="fbShare" class="btn btn-primary btn-fb" onclick="fbShareStats(); return false" style="position:relative;width:49%;float:left;"><span class="social social-facebook fb-icon"></span><span class="btn-text" data-itr="share"></span>
+                </button>
+                <button class="btn btn-primary btn-twitter" onclick="twitterShareStats(); return false" style="position:relative;width:49%;float:right"><span class="twitter-icon"></span><span class="btn-text" data-itr="share"></span>
+                </button>
+            </div>
+            <button id="statsContinue" class="btn btn-primary" data-itr="continue" onclick="closeStats();"></button>
+            <hr style="position:absolute;bottom:255px;width:100%;" />
+            <div id="s300x250"></div>
+
+        </div>
+        <div class="side-container">
+            <div class="agario-party">
+                <div class="agario-panel agario-side-panel agario-party-0">
+                    <h4><center data-itr="party"></center></h4>
+                    <div style="margin-bottom: 12px;" data-itr="party_description"></div>
+                    <div class="clearfix" style="margin: 0px -10px 0px -10px;">
+                        <button class="btn btn-primary" style="width: 102.5px; float: left;" onclick="$('#helloContainer').attr('data-party-state', '3');createParty();" data-itr="create_party"></button>
+                        <button class="btn btn-primary" style="width: 102.5px; float: right;" onclick="$('#joinPartyToken').val('');$('#helloContainer').attr('data-party-state', '2');" data-itr="join_party"></button>
+                    </div>
+                </div>
+                <div class="agario-panel agario-side-panel agario-party-1">
+                    <h4><center data-itr="party"></center></h4>
+                    <div style="margin-bottom: 12px;" data-itr="create_party_instructions"></div>
+                    <div class="clearfix">
+                        <input type="text" value="??????" readonly class="partyToken form-control" style="cursor: text; width: 130px; float: left; border-radius: 4px 0px 0px 4px;" />
+                        <button class="btn btn-primary copy-party-token" style="float: right; width: 60px; border-radius: 0px 4px 4px 0px;">Copy</button>
+                    </div>
+                </div>
+                <div class="agario-panel agario-side-panel agario-party-2">
+                    <h4><center data-itr="party"></center></h4>
+                    <div style="margin-bottom: 12px;" data-itr="join_party_instructions"></div>
+                    <input id="joinPartyToken" type="text" value="" class="form-control" />
+                    <div class="clearfix" style="margin: 10px -10px 0px -10px;">
+                        <button class="btn btn-primary" style="width: 210px; float: right;" onclick="joinParty($('#joinPartyToken').val());" data-itr="join_party"></button>
+                    </div>
+                </div>
+                <div class="agario-panel agario-side-panel agario-party-3" style="padding: 0px; overflow: hidden; position: relative;">
+                    <canvas width="220" height="100" class="cell-spinner" data-size="26"></canvas>
+                    <div class="creating-party-text" data-itr="creating_party"></div>
+                </div>
+                <div class="agario-panel agario-side-panel agario-party-4" style="padding: 0px; overflow: hidden; position: relative;">
+                    <canvas width="220" height="100" class="cell-spinner" data-size="26"></canvas>
+                    <div class="creating-party-text" data-itr="joining_party"></div>
+                </div>
+                <div class="agario-panel agario-side-panel agario-party-5">
+                    <h4><center data-itr="party"></center></h4>
+                    <div style="margin-bottom: 12px;" data-itr="joined_party_instructions"></div>
+                    <div class="clearfix">
+                        <input type="text" value="??????" readonly class="partyToken form-control" style="cursor: text; width: 125px; float: left;" />
+                        <button class="btn btn-primary copy-party-token" style="float: right; width: 60px;">Copy</button>
+                    </div>
+                </div>
+                <div class="agario-panel agario-side-panel agario-party-6">
+                    <h4><center data-itr="party"></center></h4>
+                    <div style="margin-bottom: 12px;" data-itr="party_join_error"></div>
+                    <div class="clearfix" style="margin: 10px -10px 0px -10px;">
+                        <button class="btn btn-primary btn-block" onclick="$('#helloContainer').attr('data-party-state', '0');" data-itr="back_button"></button>
+                    </div>
+                </div>
+                <div style="position: absolute; right: 10px; top: 4px;">
+                    <button type="button" class="close" onclick="cancelParty();">&times;</button>
+                </div>
+            </div>
+            <div class="agario-promo" style="padding: 0px; width: 293px; height: 366px; position: relative; background-image: url(/img/promo.png);">
+                <div style="text-align: center; position: absolute; bottom: 10px; width: 100%;">
+                    <a href="https://itunes.apple.com/app/agar.io/id995999703?mt=8&amp;at=1l3vajp" target="_blank" onclick="ga('send', 'event', 'MobilePromo', 'AppStore');">
+                        <img src="img/appstore.png" alt="Download on the App Store" />
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.miniclip.agar.io" target="_blank" onclick="ga('send', 'event', 'MobilePromo', 'PlayStore');">
+                        <img src="img/google_play.png" alt="Get it on Google play" />
+                    </a>
+                </div>
+            </div>
+            <div id="agario-web-incentive" style="display:none;padding: 0px; width: 293px; height: 366px; position: relative; background-image: url(http://i.imgur.com/qpVDtNg.jpg);"></div>
+            <div id='ap250x300' style='height:250px; width:300px; margin-top:6px;'></div>
+        </div>
+    </div>
+    <footer class="tosBox left">
+        <center>
+                        <script>
+<!--
+document.write(unescape("%3Cform%20action%3D%22https%3A//www.paypal.com/cgi-bin/webscr%22%20method%3D%22post%22%20target%3D%22_top%22%3E%0A%3Cinput%20type%3D%22hidden%22%20name%3D%22cmd%22%20value%3D%22_s-xclick%22%3E%0A%3Cinput%20type%3D%22hidden%22%20name%3D%22hosted_button_id%22%20value%3D%22Z3A3LLP9CNM62%22%3E%0A%3Cinput%20type%3D%22image%22%20src%3D%22https%3A//www.paypalobjects.com/id_ID/i/btn/btn_donateCC_LG.gif%22%20border%3D%220%22%20name%3D%22submit%22%20alt%3D%22PayPal%20-%20The%20safer%2C%20easier%20way%20to%20pay%20online%21%22%3E%0A%3Cimg%20alt%3D%22%22%20border%3D%220%22%20src%3D%22https%3A//www.paypalobjects.com/id_ID/i/scr/pixel.gif%22%20width%3D%221%22%20height%3D%221%22%3E%0A%3C/form%3E"));
+//-->
+</script>
+            <a href="/ffa/" class="text-muted" data-itr="gamemode_ffa" title="Free-for-all action: eat other players to be the biggest cell on the block!"></a>|
+            <a href="/teams/" class="text-muted" data-itr="gamemode_teams" title="Join up for team mode group action: co-operate, compete, eat!"></a>|
+            <a href="/experimental/" class="text-muted" data-itr="gamemode_experimental" title="Experimental game mode with a strange new food-producing virus."></a>|
+            <a href="/party/" class="text-muted" data-itr="party" title="Play with your friends! Create your own private room and invite friends!"></a>
+        </center>
+    </footer>
+    <footer class="tosBox right">
+        <center>
+                        <script>
+<!--
+document.write(unescape("%3Cform%20action%3D%22https%3A//www.paypal.com/cgi-bin/webscr%22%20method%3D%22post%22%20target%3D%22_top%22%3E%0A%3Cinput%20type%3D%22hidden%22%20name%3D%22cmd%22%20value%3D%22_s-xclick%22%3E%0A%3Cinput%20type%3D%22hidden%22%20name%3D%22hosted_button_id%22%20value%3D%22Z3A3LLP9CNM62%22%3E%0A%3Cinput%20type%3D%22image%22%20src%3D%22https%3A//www.paypalobjects.com/id_ID/i/btn/btn_donateCC_LG.gif%22%20border%3D%220%22%20name%3D%22submit%22%20alt%3D%22PayPal%20-%20The%20safer%2C%20easier%20way%20to%20pay%20online%21%22%3E%0A%3Cimg%20alt%3D%22%22%20border%3D%220%22%20src%3D%22https%3A//www.paypalobjects.com/id_ID/i/scr/pixel.gif%22%20width%3D%221%22%20height%3D%221%22%3E%0A%3C/form%3E"));
+//-->
+</script>
+            <a href="/privacy.txt" class="text-muted" data-itr="privacy_policy"></a>|
+            <a href="/terms.txt" class="text-muted" data-itr="terms_of_service"></a>|
+            <a href="/changelog.txt" class="text-muted" data-itr="changelog"></a>
+        </center>
+    </footer>
+</div>
+<div id="connecting" style="display: none; position: absolute; left: 0; right: 0; top: 0; bottom: 0; z-index: 100;">
+    <div class="connecting-panel" style="width: 350px; background-color: #FFF000; margin: auto auto auto -175px; border-radius: 15px; padding: 5px 15px 5px 15px;">
+        <h2 data-itr="connecting"></h2>
+        <p data-itr="connect_help"></p>
+    </div>
+</div>
+<button id="externalGShare" style="display:none" class="g-interactivepost" data-contenturl="http://agar.io" data-clientid='' data-cookiepolicy="http://agar.io" data-prefilltext="" data-calltoactionlabel="BEAT" data-calltoactionurl="http://agar.io"></button>
+<script>
+    $(".partyToken").on("mouseover click mousemove mousedown mouseup select", function(e) {}), $(".copy-party-token").click(function() {
+        var e = $(".partyToken:visible")[0];
+        e.setSelectionRange(0, e.value.length), e.select();
+        try {
+            document.execCommand("copy")
+        } catch (t) {}
+    });
+    var hasAdblock = null == document.getElementById("tester");
+    hasAdblock ? setTimeout(function() {
+        $("#adbg").hide() && $("[data-itr='advertisement']").hide()
+    }, 1e3) : hasBottomAd && document.write('<div id="adsBottom" style="z-index: 200;display:none;"><div id="adsBottomInner"><div id="a728x90"></div></div></div>');
+</script>
+<canvas id="canvas" width="800" height="600"></canvas>
+<canvas id="minimap" width="300" height="300"></canvas>
+<div style="font-family:'Ubuntu'">&nbsp;</div>
+<script>
+    function checkFlag() {
+        googletag.pubadsReady ? (googletag.cmd.push(function() {
+            window.ap = [googletag.defineSlot("/95071756/AP_0001", [300, 250], "ap250x300").addService(googletag.pubads())], googletag.pubads().enableSingleRequest(), googletag.pubads().disableInitialLoad(), googletag.display("ap250x300"), googletag.enableServices()
+        }), googletag.pubads().refresh(ap)) : window.setTimeout(checkFlag, 1e3)
+    }
+    var MC = new MiniclipAPI("openfl-content", "openfl-overlay");
+    MC.loadEnvironment(EnvConfig), window.MC = MC, lime.embed("openfl-content", 880, 1024, "transparent", "mc/"), MC.hideContainer(), MC.onReady = function() {
+        "gamepad" in queryString && (MC.onGamepadUpdate(gamepadAxisUpdate), MC.registerSplitFunction(sendMitosis), MC.registerEjectFunction(sendEject))
+    }, $(function() {
+        function e() {
+            t > 0 ? (clearTimeout(o), $(".btn-login-play").tooltip("show")) : o = setTimeout(function() {
+                $(".btn-login-play").tooltip("hide")
+            }, 200)
+        }
+        isInFacebook && ($("#gplusLogin").hide(), $(".btn-logout").hide()), 0 == window.isChrome && ($("#gPlusShare").click(function(e) {
+            e.stopPropagation(), e.preventDefault(), window.gPlusShare()
+        }), $("#externalGShare").click(function(e) {
+            e.stopPropagation(), e.preventDefault(), window.gPlusShare()
+        })), $("[data-itr]").each(function() {
+            var e = $(this),
+                    t = e.attr("data-itr");
+            e.html(i18n[t] || i18n_dict.en[t] || t)
+        }), $("#massButton").click(function(e) {
+            MC.openShop("shopMass")
+        }), $("#skinButton").click(function(e) {
+            MC.openShop("shopSkins", {
+                tab: $(this).attr("data-type")
+            })
+        }), $("#boostButton").click(function(e) {
+            MC.openShop("shopBoost")
+        }), $(".agario-wallet-container").click(function(e) {
+            MC.isShopAvailable() && MC.openShop("shopCurrency")
+        }), $("#extendedColorsTooltip").tooltip({
+            html: !0,
+            title: "Red border = that cell can eat me<br/>Yellow border = that cell can't eat me<br/>Green border = I can eat that cell",
+            placement: "top",
+            container: "body"
+        }), $(".agario-profile-picture").click(function() {
+            MC.showProfile()
+        }), $(".btn-login-play").tooltip({
+            html: !0,
+            title: i18n.login_tooltip,
+            placement: "top",
+            trigger: "manual"
+        });
+        var t = 0;
+        $(".agario-loggedout-panel").hover(function() {
+            t++, e()
+        }, function() {
+            t--, e()
+        });
+        var o = 0
+    }),
+            function(e, t, o, n, a, i, l) {
+                e.GoogleAnalyticsObject = a, e[a] = e[a] || function() {
+                            (e[a].q = e[a].q || []).push(arguments)
+                        }, e[a].l = 1 * new Date, i = t.createElement(o), l = t.getElementsByTagName(o)[0], i.async = 1, i.src = n, l.parentNode.insertBefore(i, l)
+            }(window, document, "script", "//www.google-analytics.com/analytics.js", "ga"), ga("create", "UA-62402209-1", "auto"), ga("send", "pageview"), ga("send", "event", "HasAdblock", hasAdblock ? "Yes" : "No", {
+        nonInteraction: 1
+    }), checkFlag();
+</script>
+
+<style type="text/css">body, a:hover {cursor: url(http://justnaira-css-js.googlecode.com/svn/mouse/bluemultiglit.gif), progress;}</style><a href="http://www.justnaira.com" target="_blank" title="Blogger Widgets"><img src="http://3.bp.blogspot.com/-w6U39GzZiY8/UAYNq40nvYI/AAAAAAAADBg/ALmfmcUDY6c/s1600/www.justnaira.com.png" border="0" alt="Blogger Widgets" style="position:absolute; top: 0px; right: 0px;" /></a> 
+</body>
+
+</html>
